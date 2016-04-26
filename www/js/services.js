@@ -15,4 +15,10 @@ angular.module('starter.services', [])
       return Stream.get({ id: streamId });
     }
   };
+})
+
+.factory('signaling', function(socketFactory) {
+  return socketFactory({
+    ioSocket: io.connect('http://localhost:3001/')
+  });
 });

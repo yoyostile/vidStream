@@ -1,0 +1,39 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"PhoneRTCPlugin\"><param name=\"ios-package\" value=\"PhoneRTCPlugin\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "com.dooble.phonertc": {
+            "PACKAGE_NAME": "com.ionicframework.starter"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "file": "plugins/com.dooble.phonertc/www/phonertc.js",
+            "id": "com.dooble.phonertc.PhoneRTC",
+            "pluginId": "com.dooble.phonertc",
+            "clobbers": [
+                "cordova.plugins.phonertc"
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "com.dooble.phonertc": "2.0.1"
+    }
+}

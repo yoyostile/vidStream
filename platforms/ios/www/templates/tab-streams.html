@@ -1,0 +1,12 @@
+<ion-view view-title="Streams">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="stream in streams" type="item-text-wrap" href="#/tab/streams/{{stream.id}}">
+        <h2>{{stream.id}}</h2>
+        <p>{{stream.lat}}</p>
+        <p>{{stream.lng}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
